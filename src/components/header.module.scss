@@ -1,0 +1,52 @@
+.header {
+    padding: 1rem 0 1rem;
+    text-align:center;
+
+    h1 {
+        margin-bottom: 20px;
+        font-family: GearBox;
+    }
+}
+
+.title {
+    color: #000000;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.nav-list {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding-left:5px;
+}
+
+.nav-item {
+    color:#000000; //#999999;
+    font-size:.9rem;
+    margin-right:1rem;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color:#0094ff;
+}
+
+.active-nav-item {
+    color:#ff0000;
+}
+
+@font-face {
+    font-family: 'GearBox';
+    src: url('../fonts/GearBox.ttf') format('truetype'),
+        url('../fonts/GearBox.svg#GearBox') format('svg'),
+        url(../fonts/GearBox.eot),
+        url(../fonts/GearBox.eot#iefix) format('embedded-opentype'),
+        url(../fonts/GearBox.woff) format('woff')
+}
+
+@media all and (max-width: 500px) {
+    .title {
+        font-size: 1.6rem;
+    }
+}

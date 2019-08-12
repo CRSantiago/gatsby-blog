@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.flex-box {
+    margin-right: 2.5rem;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    flex-grow: 1;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    a:hover {
+        color: #999999;
+    }
+}
+
+.follow {
+    text-align:center;
+    padding: 5px;
+    border-bottom: dotted 2px #999999;
+}
+
+.flex-mail {
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    flex-grow: 1;
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    a:hover {
+        color: #999999;
+    }
+}
+
+.mail {
+    border-radius:5px;
+}
+
+@media all and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
