@@ -9,7 +9,7 @@ import Head from '../components/head';
 const AboutPage = () => {
     const pageQuery = useStaticQuery(graphql`
       query {
-        file(relativePath: { eq: "IMG_0482.jpg" }) {
+        file(relativePath: { eq: "IMG_0482.JPG" }) {
           childImageSharp {
             fluid (maxWidth:500, maxHeight: 150){
               ...GatsbyImageSharpFluid_tracedSVG
