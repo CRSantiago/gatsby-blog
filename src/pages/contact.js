@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Layout from '../components/layout';
 import Head from '../components/head';
@@ -46,21 +47,21 @@ const ContactPage = () => {
             <h1>Contact me</h1>
             <div className={contactStyles.flexMail}>
                 <Img className={contactStyles.mail} fixed={socialIcon.gmailIcon.childImageSharp.fixed} />
-                <p><a href="mailto:chrisantiago217@gmail.com">Click to Mail</a></p>
+                <p><OutboundLink className={contactStyles.exlink} href="mailto:chrisantiago217@gmail.com">Click to Mail</OutboundLink></p>
             </div>
             <h2 className={contactStyles.follow}>Follow me</h2>
             <div className={contactStyles.flexContainer}>
                 <div className={contactStyles.flexBox}>
-                    <Img fixed={socialIcon.twitterIcon.childImageSharp.fixed} alt="Twitter icon"/>
-                    <p><a href="https://twitter.com/CRS_THE_HUMAN" target="_blank">@CRS_THE_HUMAN</a></p>
+                    <Img fixed={socialIcon.twitterIcon.childImageSharp.fixed} alt="Twitter icon" />
+                    <p><OutboundLink className={contactStyles.exlink} href="https://twitter.com/CRS_THE_HUMAN" target="_blank">@CRS_THE_HUMAN</OutboundLink></p>
                 </div>
                 <div className={contactStyles.flexBox}>
-                    <Img fixed={socialIcon.linkedInIcon.childImageSharp.fixed} alt="LinkedIn Icon"/>
-                    <p><a href="https://www.linkedin.com/in/christopher-a-santiago/" target="_blank">Christopher Santiago</a></p>
+                    <Img fixed={socialIcon.linkedInIcon.childImageSharp.fixed} alt="LinkedIn Icon" />
+                    <p><OutboundLink className={contactStyles.exlink} href="https://www.linkedin.com/in/christopher-a-santiago/" target="_blank">Christopher Santiago</OutboundLink></p>
                 </div>
                 <div className={contactStyles.flexBox}>
                     <Img fixed={socialIcon.instaIcon.childImageSharp.fixed} alt="Instagram Icon" />
-                    <p><a href="https://www.instagram.com/chris.thehuman/?hl=en" target="_blank">chris.thehuman</a></p>
+                    <p><OutboundLink className={contactStyles.exlink} href="https://www.instagram.com/chris.thehuman/?hl=en" target="_blank">chris.thehuman</OutboundLink></p>
                 </div>
             </div>
             </Layout>

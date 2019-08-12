@@ -21,6 +21,13 @@ module.exports = {
                 name: 'post'
             }
         },
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+                trackindId: "UA-145460580-1",
+                respectDNT: true
+            }
+        },
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-transformer-remark`,
