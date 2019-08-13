@@ -26,7 +26,7 @@ const IndexPage = () => {
         <Layout>
             <Head title="Home"/>
             <h1>Hello.</h1>
-            <h2>I'm Chris, a full-stack developer current residing in Orlando, FL</h2>
+            <h2>I'm Chris, a full-stack developer currently residing in Orlando, FL</h2>
             <p>Okay.. but what is this website about? <Link to='/contact' className={pagesStyles.link}>Try here.</Link></p>
             <p>Want to read about things that I think I know what I am talking about? <Link to='/blog' className={pagesStyles.link}>Read.</Link></p>
             <p>Want to follow someone whose posts will amaze you? (not really but it couldn't hurt) <Link to='/contact' className={pagesStyles.link}>Follow.</Link></p>

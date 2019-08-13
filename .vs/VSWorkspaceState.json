@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\pages"
+    "\\src"
   ],
-  "SelectedNode": "\\src\\pages\\contact.js",
+  "SelectedNode": "\\gatsby-config.js",
   "PreviewInSolutionExplorer": false
 }
