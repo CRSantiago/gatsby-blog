@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
+import SEO from '../components/seo';
 
 import Layout from '../components/layout';
 import pagesStyles from './index.module.scss';
@@ -24,7 +25,8 @@ const IndexPage = () => {
 
     return (
         <Layout>
-            <Head title="Home"/>
+            <SEO title="Home" keywords={[`blog`, `gatsby`]} />
+            <Head title="Home" />
             <h1>Hello.</h1>
             <h2>I'm Chris, a full-stack developer currently residing in Orlando, FL</h2>
             <p>Okay.. but what is this website about? <Link to='/contact' className={pagesStyles.link}>Try here.</Link></p>

@@ -2,12 +2,16 @@ module.exports = {
     siteMetadata: {
         title: 'Under Constant Construction',
         author: 'Chris Santiago',
-        description: "My name is Christopher Santiago, and this is Under Constant Construction. This blog is a safe space for my development as a person, and a developer. "
+        description: 'My name is Christopher Santiago, and this is Under Constant Construction. This blog is a safe space for my development as a person, and a developer. ',
+        siteUrl: 'https://underconstantconstruction.netlify.com',
+        social: {
+            twitter:'CRS_THE_HUMAN'
+        }
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
         {
-            resolve: 'gatsby-source-contentful',
+            resolve: `gatsby-source-contentful`,
             options: {
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
