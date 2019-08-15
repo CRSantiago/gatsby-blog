@@ -53,8 +53,8 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
                                 content: metaDescription,
                             },
                             {
-                                name: 'google-site-verification',
-                                content: 'QlRmuLQWttdkbKlZ0ZwIBX3xv0M8ouqTW3wE2Eg_jKI'
+                                name: `google-site-verification`,
+                                content: `QlRmuLQWttdkbKlZ0ZwIBX3xv0M8ouqTW3wE2Eg_jKI`
                             }
                         ]
                             .concat(metaImage ? [
@@ -67,11 +67,11 @@ function SEO({ description, lang, image, meta, keywords, title, pathname }) {
                                     content: title,
                                 },
                                 {
-                                    property: 'og:image:width',
+                                    property: `og:image:width`,
                                     content: image.width
                                 },
                                 {
-                                    property: 'og:image:height',
+                                    property: `og:image:height`,
                                     content: image.height
                                 },
                                 {
@@ -109,10 +109,10 @@ SEO.defaultProps = {
 
 SEO.propTypes = {
     description: PropTypes.string,
-    lang: PropTypes.string,
     image: PropTypes.object,
-    meta: PropTypes.array,
     keywords: PropTypes.arrayOf(PropTypes.string),
+    lang: PropTypes.string,
+    meta: PropTypes.array,
     pathname: PropTypes.string,
     title: PropTypes.string.isRequired
 }

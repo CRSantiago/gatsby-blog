@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+import SEO from '../components/seo';
 import '../templates/blog.module.scss';
 
 import JustComments from 'gatsby-plugin-just-comments';
@@ -54,6 +55,7 @@ const Blog = (props) => {
                 <p>{props.data.markdownRemark.frontmatter.date}</p>
                 <div dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}></div>
                 */}
+            <SEO title={props.data.contentfulBlogPost.title}/>
             <Head title={props.data.contentfulBlogPost.title} />
             <h1>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
