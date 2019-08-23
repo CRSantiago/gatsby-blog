@@ -27,7 +27,7 @@ const IndexPage = () => {
         <Layout>
             <SEO title="Home" keywords={[`blog`, `gatsby`]} />
             <Head title="Home" />
-            <h1>Hello.</h1>
+            <h1>Hi!</h1>
             <h2>I'm Chris, a full-stack developer currently residing in Orlando, FL</h2>
             <p>Okay.. but what is this website about? <Link to='/contact' className={pagesStyles.link}>Try here.</Link></p>
             <p>Want to read about things that I think I know what I am talking about? <Link to='/blog' className={pagesStyles.link}>Read.</Link></p>
