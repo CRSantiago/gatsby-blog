@@ -1,13 +1,65 @@
 .link {
     text-decoration: none;
-    color: #CA8856; //#999999;
+    color: #999999;
 }
 
 .link:hover {
-    color: #808080;
+    color: #666666;
 }
 
 figcaption {
     text-align:center;
     font-style: italic;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    margin-bottom:1rem;
+}
+
+.flex-item {
+    padding:1rem;
+    flex:1;
+
+    button {
+        border-radius: 5px;
+        font-weight: bold;
+        border:none;
+        background-color: #333333;
+        color:#A9D7DD;
+        transition: .4s;
+        padding:.3rem;
+    }
+
+    button:hover {
+        border: .5px solid #666666;
+        background-color:#0094ff;
+    }
+}
+
+.mm-item {
+    flex:1;
+    order:-1;
+}
+
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    background-color: #efefef;
+}
+
+.vert-align {
+    margin:auto;
+    text-align:center;
+}
+
+@media all and (max-width: 500px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .mm-item {
+        order:1;
+    }
 }

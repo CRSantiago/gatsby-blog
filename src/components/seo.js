@@ -127,6 +127,7 @@ const detailsQuery = graphql`
         siteUrl
         description
         author
+        image
         social {
           twitter
         }

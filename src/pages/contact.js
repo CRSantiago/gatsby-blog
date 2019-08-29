@@ -46,22 +46,30 @@ const ContactPage = () => {
             <Head title="Contact" />
             <h1>Contact me</h1>
             <div className={contactStyles.flexMail}>
-                <Img className={contactStyles.mail} fixed={socialIcon.gmailIcon.childImageSharp.fixed} />
-                <p><OutboundLink className={contactStyles.exlink} href="mailto:chrisantiago217@gmail.com">Click to Mail</OutboundLink></p>
+                <OutboundLink className={contactStyles.exlink} href="mailto:chrisantiago217@gmail.com">
+                    <Img className={contactStyles.mail} fixed={socialIcon.gmailIcon.childImageSharp.fixed} />
+                    <p>Click to Mail</p>
+                </OutboundLink>
             </div>
             <h2 className={contactStyles.follow}>Follow me</h2>
             <div className={contactStyles.flexContainer}>
                 <div className={contactStyles.flexBox}>
-                    <Img fixed={socialIcon.twitterIcon.childImageSharp.fixed} alt="Twitter icon" />
-                    <p><OutboundLink className={contactStyles.exlink} href="https://twitter.com/CRS_THE_HUMAN" target="_blank">@CRS_THE_HUMAN</OutboundLink></p>
+                    <OutboundLink className={contactStyles.exlink} href="https://twitter.com/CRS_THE_HUMAN" target="_blank">
+                        <Img fixed={socialIcon.twitterIcon.childImageSharp.fixed} alt="Twitter icon" />
+                        <p>@CRS_THE_HUMAN</p>
+                    </OutboundLink>
                 </div>
                 <div className={contactStyles.flexBox}>
-                    <Img fixed={socialIcon.linkedInIcon.childImageSharp.fixed} alt="LinkedIn Icon" />
-                    <p><OutboundLink className={contactStyles.exlink} href="https://www.linkedin.com/in/christopher-a-santiago/" target="_blank">Christopher Santiago</OutboundLink></p>
+                    <OutboundLink className={contactStyles.exlink} href="https://www.linkedin.com/in/christopher-a-santiago/" target="_blank">
+                        <Img fixed={socialIcon.linkedInIcon.childImageSharp.fixed} alt="LinkedIn Icon" />
+                        <p>Christopher Santiago</p>
+                    </OutboundLink>
                 </div>
                 <div className={contactStyles.flexBox}>
-                    <Img fixed={socialIcon.instaIcon.childImageSharp.fixed} alt="Instagram Icon" />
-                    <p><OutboundLink className={contactStyles.exlink} href="https://www.instagram.com/chris.thehuman/?hl=en" target="_blank">chris.thehuman</OutboundLink></p>
+                    <OutboundLink className={contactStyles.exlink} href="https://www.instagram.com/chris.thehuman/?hl=en" target="_blank">
+                        <Img fixed={socialIcon.instaIcon.childImageSharp.fixed} alt="Instagram Icon" />
+                        <p>chris.thehuman</p>
+                    </OutboundLink>
                 </div>
             </div>
             </Layout>

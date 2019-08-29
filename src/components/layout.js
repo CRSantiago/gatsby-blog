@@ -11,7 +11,7 @@ const Layout = (props) => {
 
     const imageData = useStaticQuery(graphql`
         query {
-            background: file(relativePath: {eq: "brickback.jpg"}) {
+            background: file(relativePath: {eq: "corner-building.jpg"}) {
                 childImageSharp {
                     fluid(quality: 100, maxWidth: 4160) {
                         ...GatsbyImageSharpFluid
@@ -22,7 +22,7 @@ const Layout = (props) => {
     `);
   
     return (
-        <BackgroundImage fluid={imageData.background.childImageSharp.fluid}>
+        <BackgroundImage fluid={imageData.background.childImageSharp.fluid} style={{backgroundSize:'cover'}}>
         <div className={layoutStyles.container}>
             <div className={layoutStyles.content}>
                 <div className={`${layoutStyles.card} ${layoutStyles.cardContainer}`}>
