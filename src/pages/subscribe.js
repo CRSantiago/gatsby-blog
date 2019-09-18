@@ -8,7 +8,7 @@ const SubscribePage = () => {
     <Layout>
       <Head title="Subscribe"/>
       <form name="subscribe" 
-      method="POST" 
+      method="post" 
       data-netlify="true" 
       data-netlify-recaptcha="true" 
       data-netlify-honeypot="bot-field"
