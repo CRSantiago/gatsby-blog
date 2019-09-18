@@ -22,7 +22,7 @@ figcaption {
     padding:1rem;
     flex:1;
 
-    button {
+    .button {
         border-radius: 5px;
         font-weight: bold;
         border:none;
@@ -32,9 +32,9 @@ figcaption {
         padding:.3rem;
     }
 
-    button:hover {
-        border: .5px solid #666666;
+    .button:hover {
         background-color:#0094ff;
+        color:black;
     }
 }
 

@@ -1,0 +1,31 @@
+import React from 'react';
+import Layout from '../components/layout';
+import Head from '../components/head';
+import subscribeStyles from './subscribe.module.scss';
+
+const SubscribePage = () => {
+  return(
+    <Layout>
+      <Head title="Subscribe"/>
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className={subscribeStyles.myForm}>
+        <p>
+          <label>First Name: <input type="text" name="firstname" placeholder="John"/></label>   
+        </p>
+        <p>
+          <label>Last Name: <input type="text" name="lastname" placeholder="Snow"/></label>   
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" placeholder="johnsnow@nightswatch.com"/></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message" placeholder="Give me some feedback"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Subscribe</button>
+        </p>
+      </form>
+    </Layout>
+  )
+} 
+
+export default SubscribePage;

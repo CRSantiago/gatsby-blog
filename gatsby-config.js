@@ -11,7 +11,6 @@ module.exports = {
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-feed`,
         {
             resolve: `gatsby-source-contentful`,
             options: {

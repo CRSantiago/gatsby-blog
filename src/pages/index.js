@@ -75,7 +75,7 @@ const IndexPage = () => {
               <div className={pagesStyles.flexItem}>
                 <h3>Blog Post</h3>
                 <p>I have a lot to talk about.</p>
-                <button><Link to='/blog'>Recent Post</Link></button>
+                <button><Link to='/blog' className={pagesStyles.button}>Recent Post</Link></button>
               </div>
             </div>
             <div className={[pagesStyles.flexContainer, pagesStyles.card2].join(' ')}>
@@ -85,7 +85,7 @@ const IndexPage = () => {
               <div className={[pagesStyles.flexItem, pagesStyles.mmItem].join(' ')}>
                 <h3>Music Monday</h3>
                 <p>Let's find some music.</p>
-                <button><Link to='/music-monday'>Recent Post</Link></button>
+                <button><Link to='/music-monday' className={pagesStyles.button}>Recent Post</Link></button>
               </div>
             </div>
             <div className={[pagesStyles.flexContainer, pagesStyles.card2].join(' ')}>
@@ -95,7 +95,7 @@ const IndexPage = () => {
               <div className={pagesStyles.flexItem}>
                 <h3>Football Friday</h3>
                 <p>Let's talk about football.</p>
-                <button><Link to='/football-friday'>Recent Post</Link></button>
+                <button><Link to='/football-friday' className={pagesStyles.button}>Recent Post</Link></button>
               </div>
             </div>
             <p>Want to follow someone whose posts will amaze you? (not really but it couldn't hurt) <Link to='/contact' className={pagesStyles.link}>Follow.</Link></p>
