@@ -10,7 +10,6 @@ const SubscribePage = () => {
       <form name="subscribe" 
       method="post" 
       data-netlify="true" 
-      data-netlify-recaptcha="true" 
       data-netlify-honeypot="bot-field"
       className={subscribeStyles.myForm}>
       <input type="hidden" name="form-name" value="subscribe" />
@@ -27,7 +26,6 @@ const SubscribePage = () => {
         <p>
           <label>Message: <textarea name="message" placeholder="Give me some feedback"></textarea></label>
         </p>
-        <div data-netlify-recaptcha="true"></div>
         <p>
           <button type="submit">Subscribe</button>
         </p>
