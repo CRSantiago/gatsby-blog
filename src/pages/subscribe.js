@@ -10,16 +10,11 @@ const SubscribePage = () => {
       <form name="subscribe" 
       method="POST" 
       data-netlify="true" 
-      data-netlify-recaptcha="true" action="/" 
+      data-netlify-recaptcha="true" 
       data-netlify-honeypot="bot-field"
       className={subscribeStyles.myForm}>
       <input type="hidden" name="form-name" value="subscribe" />
-          <div hidden>
-            <label>
-              Don’t fill this out:{' '}
-              <input name="bot-field"/>
-              </label>
-            </div>
+      <input type="hidden" name="bot-field" />
         <p>
           <label>First Name: <input type="text" name="firstname" placeholder="John"/></label>   
         </p>
