@@ -7,7 +7,7 @@ const SubscribePage = () => {
   return(
     <Layout>
       <Head title="Subscribe"/>
-      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" className={subscribeStyles.myForm}>
+      <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/"className={subscribeStyles.myForm}>
         <p>
           <label>First Name: <input type="text" name="firstname" placeholder="John"/></label>   
         </p>
