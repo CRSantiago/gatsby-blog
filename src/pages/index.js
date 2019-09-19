@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import SEO from '../components/seo';
 
 import Layout from '../components/layout';
-import pagesStyles from './index.module.scss';
+import pagesStyles from './CSS/index.module.scss';
 import Head from '../components/head';
 
 

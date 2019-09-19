@@ -1,10 +1,10 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Layout from '../components/layout';
 import Head from '../components/head';
-import contactStyles from './contact.module.scss';
+import contactStyles from './CSS/contact.module.scss';
 import Img from 'gatsby-image';
 
 const ContactPage = () => {
@@ -71,6 +71,9 @@ const ContactPage = () => {
                         <p>chris.thehuman</p>
                     </OutboundLink>
                 </div>
+            </div>
+            <div>
+                <h2 className={contactStyles.subscribe}><Link to="/subscribe">Subscribe</Link></h2>
             </div>
             </Layout>
         );

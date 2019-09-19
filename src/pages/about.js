@@ -3,7 +3,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
-import aboutStyles from './about.module.scss';
+import aboutStyles from './CSS/about.module.scss';
 import Head from '../components/head';
 
 const AboutPage = () => {

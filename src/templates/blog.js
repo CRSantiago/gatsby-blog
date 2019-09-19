@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import SEO from '../components/seo';
 import '../templates/blog.module.scss';
@@ -60,6 +60,7 @@ const Blog = (props) => {
             <h1>{props.data.contentfulBlogPost.title}</h1>
             <p>{props.data.contentfulBlogPost.publishedDate}</p>
             {documentToReactComponents(props.data.contentfulBlogPost.body.json, options)}
+            <p style={{fontWeight:'bold', fontStyle: 'italic'}}>Stay up to date with all my post <Link to='/subscribe'>Subscribe</Link></p>
             <JustComments recaptcha="true" apikey="40ac71d2-7604-4559-a5ab-b6c15c98bbdd"/>
         </Layout>
     );

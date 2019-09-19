@@ -40,11 +40,11 @@
 
 @font-face {
     font-family: 'GearBox';
-    src: url('../fonts/GearBox.ttf') format('truetype'),
-        url('../fonts/GearBox.svg#GearBox') format('svg'),
-        url(../fonts/GearBox.eot),
-        url(../fonts/GearBox.eot#iefix) format('embedded-opentype'),
-        url(../fonts/GearBox.woff) format('woff')
+    src: url('../../fonts/GearBox.ttf') format('truetype'),
+        url('../../fonts/GearBox.svg#GearBox') format('svg'),
+        url(../../fonts/GearBox.eot),
+        url(../../fonts/GearBox.eot#iefix) format('embedded-opentype'),
+        url(../../fonts/GearBox.woff) format('woff')
 }
 
 @media all and (max-width: 500px) {
