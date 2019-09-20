@@ -9,6 +9,7 @@ const SubscribePage = () => {
       <Head title="Subscribe"/>
       <form name="subscribe" 
       method="post" 
+      action="/success"
       data-netlify="true" 
       data-netlify-honeypot="bot-field"
       className={subscribeStyles.myForm}>
