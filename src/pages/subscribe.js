@@ -15,13 +15,13 @@ const SubscribePage = () => {
       <input type="hidden" name="form-name" value="subscribe" />
       <input type="hidden" name="bot-field" />
         <p>
-          <label>First Name: <input type="text" name="firstname" placeholder="John"/></label>   
+          <label>First Name: <input type="text" name="firstname" placeholder="Jon"/></label>   
         </p>
         <p>
           <label>Last Name: <input type="text" name="lastname" placeholder="Snow"/></label>   
         </p>
         <p>
-          <label>Email: <input type="email" name="email" placeholder="johnsnow@nightswatch.com"/></label>
+          <label>Email: <input type="email" name="email" placeholder="jonsnow@nightswatch.com"/></label>
         </p>
         <p>
           <label>Message: <textarea name="message" placeholder="Give me some feedback"></textarea></label>
